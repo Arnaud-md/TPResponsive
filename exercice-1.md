@@ -34,7 +34,7 @@ Vous êtes développeur web full stack. Vous avez besoin d'un système de grille
 
 ```html
 <div class="row">
-    <div class="col-xs-6 col-sm-3 blue">A</div>
+    <div class="col-xs-6 col-sm-3 red">A</div>
     <div class="col-xs-6 col-sm-3">B</div>
     <div class="col-xs-6">C</div>
 </div>

@@ -1,0 +1,64 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+// .col-xs-12 {
+//   width: 100%;
+//   max-width: 100%;
+// }
+// .col-sm-8 {
+//   width: 66.66%;
+//   max-width: 66.66%;
+// }
+// .col-sm-4 {
+//   width: 33.33%;
+//   max-width: 33.33%;
+// }
+// .col-sm-5 {
+//   width: 41.66%;
+//   max-width: 41.66%;
+// }
+// .col-sm-7 {
+//   width: 58.33%;
+//   max-width: 58.33%;
+// }
+// .col-sm-3 {
+//   width: 25%;
+//   max-width: 25%;
+// }
+// .col-sm-6 {
+//   width: 50%;
+//   max-width: 50%;
+// }
+@for $i from 1 through 12 {
+  .col-xs-#{$i} {
+    @media screen and (max-width: 576px) {
+      width: calc($i*100%/12);
+      max-width: calc($i*100%/12);
+    }
+  }
+}
+@for $i from 1 through 12 {
+  .col-sm-#{$i} {
+    @media screen and (min-width: 576px) {
+      width: calc($i*100%/12);
+      max-width: calc($i*100%/12);
+    }
+  }
+}
+.blue{
+  background-color: blue;
+}
+.red{
+  background-color: red;
+}
+.purple{
+  background-color: purple;
+}
+.yellow{
+  background-color: yellow;
+}
